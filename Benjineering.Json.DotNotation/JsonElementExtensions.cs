@@ -13,10 +13,9 @@ public static class JsonElementExtensions
     /// Throws an exception if the jsonElement is null or undefined
     /// </summary>
     /// <exception cref="ArgumentNullException"></exception>
-    public static void EnsureNotNullOrUndefined(this JsonElement jsonElement)
+    public static void EnsureNotNullOrUndefined(this JsonElement jsonElement, string? errorMessage)
     {
-        if (jsonElement.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
-            throw new ArgumentNullException(nameof(jsonElement));
+        JsonElementHelpers.EnsureNotNullOrUndefined(jsonElement, errorMessage);
     }
 
     /// <summary>
