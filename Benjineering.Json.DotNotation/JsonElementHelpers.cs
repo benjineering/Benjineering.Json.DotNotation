@@ -17,9 +17,6 @@ public static class JsonElementHelpers
     ///     To query array items, use the index in place of a property name (if the index is out of range, 
     ///     an undefined element will be returned) e.g. country.states.0
     /// </summary>
-    /// <returns>
-    ///     The element if found, otherwise an undefined element if you've used the ? operator in the path.
-    /// </returns>
     /// <exception cref="KeyNotFoundException"></exception>
     public static JsonElement GetPropertyAtPath(JsonElement jsonElement, string path)
     {

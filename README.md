@@ -4,6 +4,8 @@
 
 ### Usage
 
+Install `Benjineering.Json.DotNotation` via nuget.
+
 ```C#
 using Benjineering.Json.DotNotation;
 ```
