@@ -34,7 +34,7 @@ public static class JsonElementHelpers
             if (jsonElement.IsNullOrUndefined())
             {
                 if (propertyIsNullable)
-                    return jsonElement;
+                    return new JsonElement(); // undefined
 
                 var subPathEnd = offset + propertyName.Length;
                 throw new KeyNotFoundException($"Property not found at path {path[0..subPathEnd]}");
