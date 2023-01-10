@@ -38,4 +38,5 @@ var result = jsonElement.GetPropertyAtPath("country.states.0");
 
 ```C#
 jsonElement.IsNullOrUndefined();
+jsonElement.EnsureNotNullOrUndefined();
 ```

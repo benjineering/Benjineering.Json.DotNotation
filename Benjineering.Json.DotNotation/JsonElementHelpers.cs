@@ -13,6 +13,16 @@ public static class JsonElementHelpers
     }
 
     /// <summary>
+    /// Throws an exception if the jsonElement is null or undefined
+    /// </summary>
+    /// <exception cref="ArgumentNullException"></exception>
+    public static void EnsureNotNullOrUndefined(JsonElement jsonElement)
+    {
+        if (jsonElement.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+            throw new ArgumentNullException(nameof(jsonElement));
+    }
+
+    /// <summary>
     ///     Allows querying a JsonElement by path using dot notation e.g. user?.email<br /><br />
     ///     To query array items, use the index in place of a property name (if the index is out of range, 
     ///     an undefined element will be returned) e.g. country.states.0
