@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benjineering.Json.DotNotation", "Benjineering.Json.DotNotation\Benjineering.Json.DotNotation.csproj", "{DD037B65-744A-48E8-A604-CDB773649790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benjineering.Json.DotNotation.UnitTests", "Benjineering.Json.DotNotation.UnitTests\Benjineering.Json.DotNotation.UnitTests.csproj", "{3E670F2A-5274-4E93-B3BE-EA9192E7B2E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD037B65-744A-48E8-A604-CDB773649790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD037B65-744A-48E8-A604-CDB773649790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD037B65-744A-48E8-A604-CDB773649790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD037B65-744A-48E8-A604-CDB773649790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E670F2A-5274-4E93-B3BE-EA9192E7B2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E670F2A-5274-4E93-B3BE-EA9192E7B2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E670F2A-5274-4E93-B3BE-EA9192E7B2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E670F2A-5274-4E93-B3BE-EA9192E7B2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34FD3979-0546-452B-98ED-00E897F670BE}
+	EndGlobalSection
+EndGlobal
