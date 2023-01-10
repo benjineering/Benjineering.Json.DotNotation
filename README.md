@@ -25,6 +25,13 @@ var result = jsonElement.GetPropertyAtPath("user.address.country");
 var result = jsonElement.GetPropertyAtPath("user?.id");
 ```
 
+### Array indexing
+
+```C#
+// this will return a JsonElement with a ValueKind of JsonValueKind.Undefined if the index is out of range
+var result = jsonElement.GetPropertyAtPath("country.states.0");
+```
+
 ### Bonus convenience method
 
 ```C#

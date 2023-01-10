@@ -12,6 +12,15 @@ public static class JsonElementHelpers
         return jsonElement.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined;
     }
 
+    /// <summary>
+    ///     Allows querying a JsonElement by path using dot notation e.g. user?.email<br /><br />
+    ///     To query array items, use the index in place of a property name (if the index is out of range, 
+    ///     an undefined element will be returned) e.g. country.states.0
+    /// </summary>
+    /// <returns>
+    ///     The element if found, otherwise an undefined element if you've used the ? operator in the path.
+    /// </returns>
+    /// <exception cref="KeyNotFoundException"></exception>
     public static JsonElement GetPropertyAtPath(JsonElement jsonElement, string path)
     {
         if (path == null)
