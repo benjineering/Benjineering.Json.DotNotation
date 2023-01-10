@@ -1,6 +1,6 @@
 ## Benjineering.Json.DotNotation
 
-## Helpers and extension methods for querying System.Text.Json.JsonElement objects via dot notation.
+### Helpers and extension methods for querying System.Text.Json.JsonElement objects via dot notation.
 
 ### Usage
 
