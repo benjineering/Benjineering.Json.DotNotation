@@ -46,7 +46,7 @@ namespace Benjineering.Json.DotNotation.UnitTests
         {
             var json = JsonSerializer.Deserialize<JsonElement>(@"{ ""a"": null }");
             var result = JsonElementHelpers.GetPropertyAtPath(json, "a?.b");
-            Assert.Equal(JsonValueKind.Null, result.ValueKind);
+            Assert.Equal(JsonValueKind.Undefined, result.ValueKind);
         }
 
         [Fact]
@@ -62,7 +62,7 @@ namespace Benjineering.Json.DotNotation.UnitTests
         {
             var json = JsonSerializer.Deserialize<JsonElement>(@"{ ""a"": null }");
             var result = JsonElementHelpers.GetPropertyAtPath(json, "a?.b.c.d");
-            Assert.Equal(JsonValueKind.Null, result.ValueKind);
+            Assert.Equal(JsonValueKind.Undefined, result.ValueKind);
         }
 
         [Fact]
